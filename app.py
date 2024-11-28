@@ -79,7 +79,7 @@ for seconds in range(200):
             st.markdown("### First Chart")
             fig = px.density_heatmap(
                 data_frame=df, y="age_new", x="marital",
-                key="heatmap1"
+                # key="heatmap1"
             )
             st.write(fig)
             
