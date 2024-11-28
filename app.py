@@ -92,5 +92,5 @@ for seconds in range(200):
         #no duplicate streamlit element id error here ^
 
         st.markdown("### Detailed Data View")
-        # st.dataframe(df)
-        time.sleep(1)
+        st.dataframe(df)
+        # time.sleep(1)
