@@ -74,20 +74,21 @@ for seconds in range(200):
         )
 
         # create two columns for charts
-        # fig_col1, fig_col2 = st.columns(2)
-        # with fig_col1:
-        #     st.markdown("### First Chart")
-        #     fig = px.density_heatmap(
-        #         data_frame=df, y="age_new", x="marital",
-        #         # key="heatmap1"
-        #     )
-        #     st.write(fig)
+        fig_col1, fig_col2 = st.columns(2)
+        with fig_col1:
+            st.markdown("### First Chart")
+            fig = px.density_heatmap(
+                data_frame=df, y="age_new", x="marital",
+                key="fig1_"+str(seconds)
+            )
+            st.write(fig)
             
-        # with fig_col2:
-        #     st.markdown("### Second Chart")
-        #     fig2 = px.histogram(data_frame=df, x="age_new", 
-        #                        )
-        #     st.write(fig2)
+        with fig_col2:
+            st.markdown("### Second Chart")
+            fig2 = px.histogram(data_frame=df, x="age_new",
+                                key="fig2_"+str(seconds)
+                               )
+            st.write(fig2)
         #no duplicate streamlit element id error here ^
 
         st.markdown("### Detailed Data View")
