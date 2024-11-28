@@ -28,7 +28,7 @@ st.title("Real-Time / Live Data Science Dashboard")
 job_filter = st.selectbox("Select the Job", pd.unique(df["job"]), key="TopSelectBox")
 
 # creating a single-element container
-placeholder = st.empty(key="Placeholder")
+placeholder = st.empty()
 
 # dataframe filter
 df = df[df["job"] == job_filter]
