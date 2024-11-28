@@ -79,18 +79,18 @@ for seconds in range(200):
             st.markdown("### First Chart")
             fig = px.density_heatmap(
                 data_frame=df, y="age_new", x="marital",
-                key="fig1_"
+                # key="fig1_"
             )
             st.write(fig)
             
         with fig_col2:
             st.markdown("### Second Chart")
             fig2 = px.histogram(data_frame=df, x="age_new",
-                                key="fig2_"+str(seconds)
+                                # key="fig2_"+str(seconds)
                                )
             st.write(fig2)
         #no duplicate streamlit element id error here ^
 
         st.markdown("### Detailed Data View")
-        st.dataframe(df)
+        # st.dataframe(df)
         time.sleep(1)
