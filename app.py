@@ -22,7 +22,7 @@ def get_data() -> pd.DataFrame:
 df = get_data()
 
 # dashboard title
-st.title("Real-Time / Live Data Science Dashboard", key="Title")
+st.title("Real-Time / Live Data Science Dashboard", key="title1")
 
 # top-level filters
 job_filter = st.selectbox("Select the Job", pd.unique(df["job"]), key="TopSelectBox")
