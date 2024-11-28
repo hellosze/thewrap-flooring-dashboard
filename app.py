@@ -91,5 +91,5 @@ for seconds in range(200):
             st.write(fig2)
 
         st.markdown("### Detailed Data View")
-        st.dataframe(df)
+        st.dataframe(df,"count0")
         time.sleep(1)
