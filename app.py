@@ -4,7 +4,7 @@ import numpy as np
 import plotly.express as px
 import altair as alt
 
-st.title(“My First Streamlit Data Dashboard”)
+st.title("My First Streamlit Data Dashboard")
 
 ### add new file here
 filename = "crains_nov26.csv"
