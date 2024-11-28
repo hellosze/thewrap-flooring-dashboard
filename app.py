@@ -83,12 +83,13 @@ for seconds in range(200):
             )
             st.write(fig)
             
-        # with fig_col2:
-        #     st.markdown("### Second Chart")
-        #     fig2 = px.histogram(data_frame=df, x="age_new", 
-        #                        )
-        #     st.write(fig2)
+        with fig_col2:
+            st.markdown("### Second Chart")
+            fig2 = px.histogram(data_frame=df, x="age_new", 
+                               )
+            st.write(fig2)
+        #no duplicate streamlit element id error here ^
 
         st.markdown("### Detailed Data View")
-        st.dataframe(df)
+        # st.dataframe(df)
         time.sleep(1)
