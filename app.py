@@ -22,13 +22,13 @@ def get_data() -> pd.DataFrame:
 df = get_data()
 
 # dashboard title
-st.title("Real-Time / Live Data Science Dashboard")
+st.title("Real-Time / Live Data Science Dashboard", key="Title")
 
 # top-level filters
-job_filter = st.selectbox("Select the Job", pd.unique(df["job"]))
+job_filter = st.selectbox("Select the Job", pd.unique(df["job"]), key="TopSelectBox")
 
 # creating a single-element container
-placeholder = st.empty()
+placeholder = st.empty(key="Placeholder")
 
 # dataframe filter
 df = df[df["job"] == job_filter]
