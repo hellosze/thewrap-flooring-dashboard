@@ -20,3 +20,6 @@ st.set_page_config(
     page_icon="✅",
     layout="wide",
 )
+
+st.title("Real-Time / Live Data Science Dashboard")
+job_filter = st.selectbox("Select the Job", pd.unique(df["job"]))
